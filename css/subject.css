@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #EEE;
+
+}
+
+:root {
+    --main-color: #394867;
+    --scandey-color: #394867;
+    --thred-color: #eb6363;
+    --hover-color: #e9e8e8;
+    --text-color: #20262ec4;
+    --time-hover: 0.3s;
+    --pad-sec: 60px;
+    --gray-c: #888;
+}
+
+.subject-info h4 {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 18px;
+    color: var(--gray-c);
+
+}
+
+.subject-info {
+    height: 50vh;
+}
+
+#potenial-grade {
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0 auto;
+
+}
+
+
+
+
+#potenial-per-field {
+    margin: 0 auto;
+    width: 80% !important;
+    height: 80% !important;
+
+    margin: 0 auto;
+
+}
+
+.last-chart {
+
+    margin: 20px auto 0 auto;
+    padding: 15px;
+}
+
+.holer-last-chart {
+    padding: 20px;
+}

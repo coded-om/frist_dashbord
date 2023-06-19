@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Frame work -->
+    <link rel="stylesheet" href="css/framwork.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- fontaswom -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Cairo:wght@300&family=Caveat:wght@400;500&family=Open+Sans:wght@400;500;800&family=Work+Sans:wght@300;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <title>dashboard</title>
+</head>
+
+<body lang="en">
+    <section class="page d-flex">
+        <div class="sidbar bg-FFF p-20 pos-r">
+            <div class="info-user">
+                <img src="img/user (1).png" class="avtar" alt="user">
+                <div class="content-user">
+                    <h5>test</h5>
+                    <p>1606 | 8B</p>
+                </div>
+            </div>
+            <ul>
+                <li><a class="activ d-flex text-c rad-6 p-10 fz-14 c-black" href="index.html"><i
+                            class="fa-solid fa-table"></i>
+                        <span class="hid-txt">dashboard</span>
+                    </a>
+                </li>
+                <li><a class=" d-flex text-c rad-6 p-10 fz-14 c-black" href="index.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="hid-txt">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full over-h">
+            <!-- head -->
+            <div class="head bg-FFF p-15 box-between">
+                <h4 class="gray-c">Main dashboard
+                </h4>
+            </div>
+            <!-- end head -->
+            <h1 class="pos-r ">
+                <!-- #NAME UESER -->
+                Test dashboard
+            </h1>
+            <div class="holder-boxs d-grid gap-20 ">
+
+                <!-- #POTENIAL BOX -->
+                <div class="chart-potenial bg-FFF rad-10 txt-c-mobile block-mobile p-15 ">
+                    <div class="p-10 box-between">
+                        <div>
+                            <canvas id="chart-potenial"></canvas>
+                            <h3>potenial grad</h3>
+                        </div>
+                        <div> <canvas id="chart-potenial-2"></canvas>
+                            <h3>peer rank <span class="c-rad">Top 4%</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Average-grade -->
+                <div class="Average-grade bg-FFF rad-10 txt-c-mobile block-mobile p-15 ">
+                    <div class="p-10 box-between">
+                        <canvas id="Average-grade">
+                        </canvas>
+                    </div>
+                </div>
+
+                <div class="Alerts p-20 bg-FFF rad-6">
+                    <canvas id="Afreg-fild"></canvas>
+                </div>
+                <!-- end year target -->
+                <!-- start task widet -->
+                <div class="taskes  p-20 bg-FFF rad-6">
+                    <h3 class="mt-0 ">Logs </h3>
+                    <div class="task-info d-flex flex-space-bt  al-it-c ">
+                        <div class="information-task">
+                            <!-- #DATE -->
+                            <h5>30/10/2023 </h5>
+                            <!-- #DGREE 10/10 -->
+                            <p>Ziyad got <span class="c-green">10/10</span> in physics Exam 3</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="task-info d-flex flex-space-bt  al-it-c  ">
+                        <div class="information-task ">
+                            <!-- #DATE -->
+                            <h5 class="mt-0">30/10/2023</h5>
+                            <!-- #DGREE 10/10 -->
+                            <p>Ziyad got <span class="c-yellow">7.5/10</span> in Arabic Exam 2</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="task-info d-flex flex-space-bt  al-it-c ">
+                        <div class="information-task">
+                            <!-- #DATE -->
+                            <h5 class="mt-0">30/10/2023 </h5>
+                            <!-- #DGREE 10/10 -->
+                            <p>Ziyad got <span class="c-yellow">26/40</span> in English IETLS </p>
+                        </div>
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="task-info d-flex flex-space-bt  al-it-c ">
+                        <div class="information-task">
+                            <!-- #DATE -->
+                            <h5 class="mt-0">30/10/2023</h5>
+                            <!-- #DGREE 10/10 -->
+                            <p>Ziyad got <span class="c-green">9/10</span> in Islamic Exam 1</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="task-info d-flex flex-space-bt  al-it-c ">
+                        <div class="information-task">
+                            <!-- #DATE -->
+                            <h5 class="mt-0">30/10/2023</h5>
+                            <!-- #DGREE 10/10 -->
+                            <p>Ziyad got <span class="c-green">10/10</span> in Math</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="task-info d-flex flex-space-bt  al-it-c ">
+                        <div class="information-task">
+                            <!-- #DATE -->
+                            <h5 class="mt-0">30/10/2023</h5>
+                            <!-- #DGREE 10/10 -->
+                            <p>Ziyad got <span class="c-rad">4/10</span> in physics Exam 2</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="task-info d-flex flex-space-bt  al-it-c ">
+                        <div class="information-task">
+                            <!-- #DATE -->
+                            <h5 class="mt-0">30/10/2023</h5>
+                            <!-- #DGREE 10/10 -->
+                            <p>Ziyad got <span class="c-green">10/10</span> in Electronice Exam 1</p>
+                        </div>
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <button class="btn"><i class="fa-solid fa-solar-panel"></i> Viwe All</button>
+                </div>
+
+            </div>
+            <div class="holder-box-2">
+                <div class="topics-chart bg-FFF rad-10 txt-c-mobile block-mobile p-15 ">
+                    <div class="p-10 box-between">
+                        <canvas id="topics-chart">
+                        </canvas>
+                    </div>
+                </div>
+                <div class="subjects p-20 bg-FFF rad-10">
+                    <h2 class=" mt-0 mb-10">Subjects</h2>
+                    <p class="mt-0 mb-20 gray-c">Detailed reports About Subjects</p>
+                    <div class=" d-flex txt-c gap-20 f-wrap">
+                        <div class="subject p-20 rad-10 fz-13 gray-c fw-bold ">
+                            <a href="subject.html"> <i class="fa-solid fa-language fa-2x mb-10"></i>
+                                <span class="d-block c-black fz-25 mb-5">English</span></a>
+                        </div>
+                        <div class="subject p-20 rad-6 fz-13 gray-c fw-bold ">
+                            <a href="subject.html"> <i class="fa-solid fa-book fa-2x mb-10"></i>
+                                <span class="d-block c-black fz-25 mb-5">Arabic</span></a>
+
+
+                        </div>
+                        <div class="subject p-20 rad-6 fz-13 gray-c fw-bold ">
+                            <a href="subject.html"> <i class="fa-solid fa-book-quran fa-2x mb-10"></i>
+                                <span class="d-block c-black fz-25 mb-5">Islamic</span></a>
+
+
+                        </div>
+                        <div class="subject p-20 rad-6 fz-13 gray-c fw-bold ">
+                            <a href="subject.html"> <i class="fa-solid fa-calculator fa-2x mb-10"></i>
+                                <span class="d-block c-black fz-25 mb-5">Math</span></a>
+
+                        </div>
+                        <div class="subject p-20 rad-6 fz-13 gray-c fw-bold ">
+                            <a href="subject.html"> <i class="fa-solid fa-computer fa-2x mb-10"></i>
+                                <span class="d-block c-black fz-25 mb-5">ICT</span></a>
+
+                        </div>
+                        <div class="subject p-20 rad-6 fz-13 gray-c fw-bold ">
+                            <a href="subject.html"> <i class="fa-solid fa-business-time fa-2x mb-10"></i>
+                                <span class="d-block c-black fz-25 mb-5">MPA</span></a>
+
+                        </div>
+                        <div class="subject p-20 rad-6 fz-13 gray-c fw-bold ">
+                            <a href="subject.html"> <i class="fa-solid fa-flask-vial fa-2x mb-10"></i>
+                                <span class="d-block  fz-25 mb-5">Chemistry</span></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- #ALL JS CHART  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('chart-potenial');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['4%', '96%'],
+                datasets: [{
+                    label: '%',
+                    // input data hear !!
+                    data: [4, 96],
+                    borderWidth: 2,
+                    backgroundColor: [
+                        'rgba(167, 183, 240,0.8)',
+                        'rgba(66, 105, 245,0.8)'
+                    ],
+                }]
+            },
+        });
+        // for chart potenial-2 
+        const chart2 = document.getElementById('chart-potenial-2');
+        new Chart(chart2, {
+            type: 'doughnut',
+            data: {
+                labels: ['4%', '96%'],
+                datasets: [{
+                    label: '%',
+                    // input data hear !!
+                    data: [4, 96],
+                    borderWidth: 2,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.8)',
+                        'rgba(210, 9, 53, 0.8)',
+                    ],
+                }]
+            },
+        });
+        ////////////////////////////////
+        //Avreg chart
+        const Averg = document.getElementById('Average-grade');
+        new Chart(Averg, {
+            type: 'line',
+            data: {
+                labels: ['Spt', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Apr', 'May', 'Jun'],
+                datasets: [{
+                    label: 'Average grade',
+                    // input data hear !!
+                    data: [75, 90, 80, 77, 66, 96, 89, 67, 55],
+                    borderWidth: 4,
+                    backgroundColor: [
+                        'rgba(236, 66, 66,0.8)'],
+                    fill: true,
+                    showLine: true,
+                },]
+            }, options: {
+                indexAxis: 'x',
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        stacked: true,
+                        suggestedMax: 100
+                    }
+                },
+            }
+        });
+        //////////////////////////////////////////////////////////
+        //Avreg chart2
+        const Averg_marks = document.getElementById('Afreg-fild');
+        new Chart(Averg_marks, {
+            type: 'radar',
+            data: {
+                labels: ["Exam", "Quizzes", "Homework", "Lab work", "Assigments"],
+                datasets: [{
+                    label: 'Average grade',
+                    // input data hear !!
+                    data: [75, 90, 80, 77, 90],
+                    fill: true,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    pointBackgroundColor: 'rgb(255, 99, 132)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(255, 99, 132)',
+                    borderWidth: 2,
+                },]
+            }, options: {
+                scales: {
+                    r: {
+                        angleLines: {
+                            display: false
+                        },
+                        suggestedMin: 10,
+                        suggestedMax: 100
+                    }
+                }
+            }
+        });
+        ///////////////////////////////////////////////////////////
+        //topics chart[Arabic , Islamic , math  ....]
+        const topics = document.getElementById('topics-chart');
+        new Chart(topics, {
+            type: 'bar',
+            data: {
+                labels: ["Arabic", "Islamic", "English", "Math", "ICT", "MPA", "Chemistry", "projects", "Prod design"],
+                datasets: [{
+                    label: ["Potenial Grades"],
+                    axis: 'y',
+                    // input data hear !!
+                    data: [95, 99, 89, 98, 98, 92, 92, 95, 90, 90, 85],
+                    fill: false,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.5)',
+                        'rgba(255, 159, 64, 0.5)',
+                        'rgba(255, 205, 86, 0.5)',
+                        'rgba(75, 192, 192, 0.5)',
+                        'rgba(54, 162, 235, 0.5)',
+                        'rgba(153, 102, 255, 0.5)',
+                        'rgba(201, 203, 207, 0.5)',
+                        'rgba(54, 162, 235, 0.5)',
+                        'rgba(153, 102, 255, 0.5)',
+                        'rgba(201, 203, 207, 0.5)'
+                    ],
+                    borderColor: [
+                        'rgb(255, 99, 132)',
+                        'rgb(255, 159, 64)',
+                        'rgb(255, 205, 86)',
+                        'rgb(75, 192, 192)',
+                        'rgb(54, 162, 235)',
+                        'rgb(153, 102, 255)',
+                        'rgb(201, 203, 207)',
+                        'rgb(54, 162, 235)',
+                        'rgb(153, 102, 255)',
+                        'rgb(201, 203, 207)'
+                    ],
+                    borderWidth: 1
+
+                },]
+
+            }, options: {
+                indexAxis: 'y',
+                scales: {
+                    r: {
+                        angleLines: {
+                            display: true
+                        },
+                        suggestedMin: 10,
+                        suggestedMax: 100
+                    },
+
+                }
+            }
+        });
+
+        ///////////////////////////////////////////////////
+
+        const actions = [
+            {
+                name: 'Randomize',
+                handler(chart) {
+                    chart.data.datasets.forEach(dataset => {
+                        dataset.data = Utils.numbers({ count: chart.data.labels.length, min: 0, max: 100 });
+                    });
+                    chart.update();
+                }
+            },
+            {
+                name: 'Add Data',
+                handler(chart) {
+                    const data = chart.data;
+                    if (data.datasets.length > 0) {
+                        data.labels.push('data #' + (data.labels.length + 1));
+
+                        for (let index = 0; index < data.datasets.length; ++index) {
+                            data.datasets[index].data.push(Utils.rand(0, 100));
+                        }
+
+                        chart.update();
+                    }
+                }
+            },
+            {
+                name: 'Remove Data',
+                handler(chart) {
+                    chart.data.labels.splice(-1, 1); // remove the label first
+
+                    chart.data.datasets.forEach(dataset => {
+                        dataset.data.pop();
+                    });
+
+                    chart.update();
+                }
+            }
+        ];
+
+
+
+        const labels = ['Red', 'Orange', 'Yellow', 'Green', 'Blue'];
+        const nn = {
+            labels: labels,
+            datasets: [
+                {
+                    label: 'Dataset 1',
+                    data: [75, 90, 80, 77, 90],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.5)',
+                        'rgba(255, 159, 64, 0.5)',
+                        'rgba(255, 205, 86, 0.5)',
+                        'rgba(75, 192, 192, 0.5)',
+                        'rgba(54, 162, 235, 0.5)',
+                        'rgba(153, 102, 255, 0.5)',
+                        'rgba(201, 203, 207, 0.5)',
+                        'rgba(54, 162, 235, 0.5)',
+                        'rgba(153, 102, 255, 0.5)',
+                        'rgba(201, 203, 207, 0.5)'
+                    ]
+                }
+            ]
+        }
+
+        const config = {
+            type: 'polarArea',
+            data: nn,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Chart.js Polar Area Chart'
+                    }
+                }
+            },
+        };
+
+        const dd = document.getElementById('chart-dgree-percentage');
+        new Chart(dd, config)
+
+
+
+        ////////////////////////////////////////////////////////
+        const data_student = {
+            labels: [
+                'January',
+                'February',
+                'March',
+                'April'
+            ],
+            datasets: [{
+                type: 'bar',
+                label: 'Bar Dataset',
+                data: [10, 20, 30, 40],
+                borderColor: 'rgb(255, 99, 132)',
+                backgroundColor: 'rgba(255, 99, 132, 0.2)'
+            }, {
+                type: 'line',
+                label: 'Line Dataset',
+                data: [50, 50, 50, 50],
+                fill: false,
+                borderColor: 'rgb(54, 162, 235)'
+            }]
+        };
+
+        const options2 = {
+            type: 'scatter',
+            data: data_student,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        };
+
+        const best_student = document.getElementById('tottot');
+        new Chart(best_student, options2)
+
+
+    </script>
+
+</body>
+
+</html>

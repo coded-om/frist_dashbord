@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    transition: 0.2s;
+
+}
+
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #EEE;
+
+}
+
+:root {
+    --main-color: #394867;
+    --scandey-color: #394867;
+    --thred-color: #eb6363;
+    --hover-color: #c6c6c6;
+    --text-color: #20262ec4;
+    --time-hover: 0.3s;
+    --pad-sec: 60px;
+    --gray-c: #888;
+}
+
+/* start contener System  */
+.contener {
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+@media (min-width: 922px) {
+    .contener {
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .contener {
+        width: 1170px;
+    }
+}
+
+/* end contener System  */
+
+.control-panl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    border-bottom: 1px solid #888;
+
+}
+
+
+
+.control-panl ul {
+    display: flex;
+}
+
+.control-panl li {
+    border-radius: 6px;
+    color: #FFF;
+    margin-right: 30px;
+    padding: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: rgba(57, 72, 103, 0.69);
+    transition: var(--time-hover);
+}
+
+
+.control-panl li:last-child {
+    background-color: #394867;
+    width: 100px;
+    text-align: center;
+}
+
+.control-panl li:hover {
+    background-color: rgba(57, 72, 103, 0.5);
+}
+
+.text-contact {
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+
+}
+
+.text-contact h2 {
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+
+
+.holer-lable {
+    padding: var(--pad-sec) 20px;
+
+}
+
+
+.holer-lable>div {
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+
+.main-lable {
+    background-color: #FFF;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: var(--time-hover);
+    padding: 10px;
+}
+
+
+.main-lable:hover {
+    box-shadow: rgb(99 99 99 / 46%) 0px 2px 8px 0px;
+}
+
+
+.frist-links {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: center;
+    gap: 10px !important;
+    width: 10%;
+}
+
+.frist-links img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+
+.second-links {
+    width: 70%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    color: var(--main-color);
+    align-items: center;
+}
+
+.second-links a {
+    color: var(--main-color);
+}
+
+.second-links a:hover {
+    color: var(--hover-color);
+}
+
+.nest-list {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.nest-list a {}
+
+
+#info-lable a {
+    width: 25%;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .contener {
+        width: 768px;
+    }
+}
+
+@media (max-width: 767px) {
+    #info-lable a:first-child {
+        font-size: 10px;
+        width: 15%;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-lable {
+        font-size: 10px !important;
+    }
+}
+
+.holder-student-charts {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px dashed var(--gray-c);
+
+}
+
+.holder-student-charts {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.avreage-student>div {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+#beast-student {
+    min-width: 400px !important;
+    min-height: 200px !important;
+}
+
+.chart-sec {
+    padding: 30px 20px;
+    border-bottom: 1px solid black;
+}
+
+.chart-sec h2 {
+    padding: 15px;
+}
+
+.chart-sec h2 span {
+    color: var(--gray-c);
+    font-size: 14px;
+    padding-left: 5px;
+}

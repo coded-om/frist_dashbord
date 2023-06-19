@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Frame work -->
+    <link rel="stylesheet" href="css/framwork.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- fontaswom -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Cairo:wght@300&family=Caveat:wght@400;500&family=Open+Sans:wght@400;500;800&family=Work+Sans:wght@300;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/subject.css">
+
+    <!-- the titile will be name of the subject   -->
+    <title>Subject</title>
+</head>
+
+<body lang="en">
+    <section class="page d-flex">
+        <div class="sidbar bg-FFF p-20 pos-r">
+            <div class="info-user">
+                <img src="img/user (1).png" class="avtar" alt="user">
+                <div class="content-user">
+                    <h5>Test </h5>
+                    <p>1606 | 8B</p>
+                </div>
+            </div>
+            <ul>
+                <li><a class="activ d-flex text-c rad-6 p-10 fz-14 c-black" href="student.html"><i
+                            class="fa-solid fa-table"></i>
+                        <span class="hid-txt">dashboard</span>
+                    </a>
+                </li>
+                <li><a class=" d-flex text-c rad-6 p-10 fz-14 c-black" href="student.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="hid-txt">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full over-h">
+            <!-- head -->
+            <!-- end head -->
+            <h1 class="pos-r ">
+                <!-- #NAME Subject -->
+                English dashboard
+            </h1>
+            <div class="holder-boxs d-grid gap-20 ">
+                <div class="subject-info bg-FFF rad-10 txt-c-mobile block-mobile p-15">
+                    <h4>Potenial Grade</h4>
+                    <canvas id="potenial-grade" e></canvas>
+                </div>
+                <div class="subject-info bg-FFF rad-10 txt-c-mobile block-mobile p-15">
+                    <canvas id="potenial-Avreg"></canvas>
+                </div>
+            </div>
+            <div class="holer-last-chart">
+                <div class="last-chart bg-FFF rad-10 txt-c-mobile block-mobile p-15">
+                    <canvas id="potenial-per-field"></canvas>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+    <!-- #ALL JS CHART  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+
+        //#First chart  for the Potenial Grade
+        const potenial_grade = document.getElementById('potenial-grade');
+        new Chart(potenial_grade, {
+            type: 'doughnut',
+            data: {
+                labels: ['5.5%', '94.5%'],
+                datasets: [{
+                    label: '%',
+                    // input data hear !!
+                    data: [5.5, 94.5],
+                    borderWidth: 2,
+                    backgroundColor: [
+                        'rgba(246, 195, 145,0.8)',
+                        'rgba(224, 142, 109,0.8)'
+                    ],
+                }]
+            },
+        });
+        /////////////////////////////////////////////////////////////////////
+        //#Second chart  for the Avrg  in one year 
+        const Averg = document.getElementById('potenial-Avreg');
+        new Chart(Averg, {
+            type: 'line',
+            data: {
+                labels: ['Spt', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Apr', 'May', 'Jun'],
+                datasets: [{
+                    label: 'Grades % throughtout the year ',
+                    // input data hear !!
+                    data: [75, 90, 80, 86, 90, 96, 89, 80, 99],
+                    borderWidth: 3,
+                    backgroundColor: [
+                        'rgba(57, 72, 103,0.8)'],
+                    fill: false,
+                    showLine: true,
+                },]
+            }, options: {
+                indexAxis: 'x',
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        stacked: true,
+                        suggestedMax: 125
+                    }
+                },
+            }
+        });
+        /////////////////////////////////////////////////////////////////////////
+        //theard chart For Grades per Field in(%)
+        //topics chart[Arabic , Islamic , math  ....]
+        const topics = document.getElementById('potenial-per-field');
+        new Chart(topics, {
+            type: 'bar',
+            data: {
+                labels: ["Writing", "Reading", "Class speaking", "Lislening", "Presentation"],
+                datasets: [{
+                    label: ["Potenial Grades"],
+                    axis: 'y',
+                    // input data hear !!
+                    data: [95, 99, 89, 98, 88],
+                    fill: false,
+                    backgroundColor: [
+                        'rgba(57, 72, 103,0.9)',
+                        'rgba(235, 99, 99,0.9)',
+                        'rgba(192, 219, 234,0.9)',
+                        'rgba(75, 192, 192, 0.9)',
+                        'rgba(186, 144, 198,0.9)'
+                    ],
+                    borderColor: [
+                        'rgb(57, 72, 103)',
+                        'rgb(235, 99, 99)',
+                        'rgb(192, 219, 234)',
+                        'rgb(75, 192, 192)',
+                        'rgba(186, 144, 198)'
+
+                    ],
+                    borderWidth: 2
+
+                },]
+
+            }, options: {
+                indexAxis: 'x',
+                scales: {
+                    r: {
+                        angleLines: {
+                            display: true
+                        },
+                        suggestedMin: 10,
+                        suggestedMax: 100
+                    },
+
+                }
+            }
+        });
+    </script>
+    </script>
+</body>
+
+</html>

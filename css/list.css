@@ -1,0 +1,106 @@
+/* Start Global Rules */
+
+:root {
+    --main-color: #eb6363;
+    --transparent-color: #394867;
+    --section-padding: 100px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #EEE;
+
+}
+
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.cards {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    text-align: center;
+
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--transparent-color);
+    border-radius: 4px;
+    width: 300px;
+    box-shadow: #eb636349 0px 8px 24px;
+    background-color: #FFF;
+
+}
+
+.card img {
+    width: 100px;
+    padding: 10px;
+}
+
+.card h3 {
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card a {
+    display: block;
+    background-color: #eb6363;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background-color: #394867;
+
+
+}
+
+.activ-span {
+    color: #eb6363;
+    font-size: 14px;
+    padding: 10px;
+
+
+}
